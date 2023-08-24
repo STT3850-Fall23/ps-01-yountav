@@ -1,30 +1,18 @@
 ---
-title: "Problem Set 01: Intro to R and RStudio"
+title: "Using the RStudio IDE with Quarto"
 author: "Alyssa Yount"
 date: last-modified
-date-format: "[Last modified on] MMMM DD, YYYY HH:mm:ss zzz"
+date-format: "[Last modified on] August 24, 2023 HH:mm:ss zzz"
 format: 
   html: default
   pdf: default
 editor: visual
 ---
 
-```{r include = FALSE}
-library(knitr)
-knitr::opts_chunk$set(echo = TRUE, fig.align = "center", comment = NA, message = FALSE,  warning = FALSE)
+```{r}
+x <- 6
 ```
 
-```{r, echo = FALSE}
-knitr::include_graphics("./figures/cbrown.jpg", dpi = 126)
-```
-
-The goal this week is to introduce `R` and RStudio which will be used throughout the course both to review the statistical concepts discussed in the course and to analyze real data and come to informed conclusions. To clarify which is which: `R` is the name of the programming language itself, and RStudio is an integrated development editor (IDE).
-
-Today, we begin with the fundamental building blocks of `R` and RStudio: the interface, creating and saving files, and basic commands.
-
-# Opening RStudio Server
-
-Open Appalachian's RStudio Server and sign in: [RStudio Server](https://mathr.appstate.edu)
 
 Your credentials are the same ones you use to log into your ASU email account.
 
@@ -195,8 +183,8 @@ Answer the following with code in a code chunk (no text necessary). Remember tha
 ::: {.callout-important icon="false" collapse="false" title="Problem 1 Answers"}
 ```{r}
 # Type your code and comments inside the code chunk
-y<- 7
-z<- x*y
+y <- 7
+z <- x * y
 ```
 :::
 
@@ -212,7 +200,8 @@ z<- x*y
 ans <- 6 + 3
 ```
 
--   The answer to 6 + 3 ('r 6+3' or 'r ans2')
+-   The answer to 6 + 3 (`r 6+3` or `r ans`)
+-   The answer for the expression 6+3 appears in the console section of the bottom left panel in black as well as under the R code chunk. 
 
 :::
 
@@ -226,14 +215,15 @@ ans <- 6 + 3
 ::: {.callout-important icon="false" collapse="false" title="Problem 3 Answers"}
 ```{r}
 # Type your code and comments inside the code chunk
-
+a <- 6+3
+a
 ```
 
--   Type your answer here and delete this sentence.
+-   The answer does not appear here as I have not used the variable "ans". 
 
--   Type your answer here and delete this sentence.
+-   The value of a is shown below under the console tab of the bottom left panel. The value of a is shown as 6 + 3. 
 
--   Type your answer here and delete this sentence.
+-   After typing a into the code chunk, the answer to the expression 6 + 3 is stated under the code chunk as well as in the console section of the bottom left panel. 
 :::
 
 ::: callout-tip
@@ -248,10 +238,10 @@ It is a good idea to render your document from time to time as you make changes 
 ::: {.callout-important icon="false" collapse="false" title="Problem 4 Answers"}
 ```{r}
 # Type your code and comments inside the code chunk
-
+a^2
 ```
 
--   Type your answer here and delete this sentence.
+-   The "^" operator acts as an operation to put whatever the value before it is to the power of the value placed after the operator. So, in this example, a, or 9, is put to the power of 2, which is 81. 
 :::
 
 ::: {.callout-note icon="false" title="Problem 5"}
@@ -262,10 +252,10 @@ It is a good idea to render your document from time to time as you make changes 
 ::: {.callout-important icon="false" collapse="false" title="Problem 5 Answers"}
 ```{r}
 # Type your code and comments inside the code chunk
-
+sum(a, x, y)
 ```
 
--   Type your answer here and delete this sentence.
+-   The sum function sums all of the values entered and adds them together. So, in this example, the values a, or 9, plus x, or 6, plus y, or 7 is 22. 
 :::
 
 ::: {.callout-note icon="false" title="Problem 6"}
@@ -273,7 +263,7 @@ It is a good idea to render your document from time to time as you make changes 
 :::
 
 ::: {.callout-important icon="false" collapse="false" title="Problem 6 Answers"}
--   Type your answer here and delete this sentence.
+-   After clicking on the broom icon in the top right corner of the screen, the environment pane was wiped of each of the values and their answers. 
 :::
 
 ::: {.callout-note icon="false" title="Problem 7"}
@@ -282,7 +272,7 @@ It is a good idea to render your document from time to time as you make changes 
 :::
 
 ::: {.callout-important icon="false" collapse="false" title="Problem 7 Answers"}
--   Type your answer here and delete this sentence.
+-   After selecting "Run All", the console screen changed and the environment pane was refreshed to include all previously used values and their given numbers. 
 :::
 
 ::: {.callout-note icon="false" title="Problem 8"}
@@ -296,10 +286,10 @@ v + 2
 ::: {.callout-important icon="false" collapse="false" title="Problem 8 Answers"}
 ```{r}
 # Type your code and comments inside the code chunk
-
+v + 2
 ```
 
--   Type your answer here and delete this sentence.
+-   The expression v + 2 adds 2 to each of the values gievn to v, which includes 2, 4 and 6. This changed to 4, 6 and 8. 
 :::
 
 ::: {.callout-note icon="false" title="Problem 9"}
@@ -312,11 +302,11 @@ music <- c("bluegrass", "funk", "folk")
 
 ::: {.callout-important icon="false" collapse="false" title="Problem 9 Answers"}
 ```{r}
-# Type your code and comments inside the code chunk
+music <- c("bluegrass", "funk", "folk")
 
 ```
 
--   Type your answer here and delete this sentence.
+-   The environment pane tells us the characters are not numbers by putting each of the words in quotation marks. 
 :::
 
 ::: {.callout-note icon="false" title="Problem 10"}

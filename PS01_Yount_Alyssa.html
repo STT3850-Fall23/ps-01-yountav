@@ -8,7 +8,7 @@
 
 <meta name="author" content="Alyssa Yount">
 
-<title>Problem Set 01: Intro to R and RStudio</title>
+<title>Using the RStudio IDE with Quarto</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -58,19 +58,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="PS01_source_files/libs/clipboard/clipboard.min.js"></script>
-<script src="PS01_source_files/libs/quarto-html/quarto.js"></script>
-<script src="PS01_source_files/libs/quarto-html/popper.min.js"></script>
-<script src="PS01_source_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="PS01_source_files/libs/quarto-html/anchor.min.js"></script>
-<link href="PS01_source_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="PS01_source_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="PS01_source_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="PS01_source_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="PS01_source_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<script src="PS01_source_files/libs/quarto-diagram/mermaid.min.js"></script>
-<script src="PS01_source_files/libs/quarto-diagram/mermaid-init.js"></script>
-<link href="PS01_source_files/libs/quarto-diagram/mermaid.css" rel="stylesheet">
+<script src="PS01_Yount_Alyssa_files/libs/clipboard/clipboard.min.js"></script>
+<script src="PS01_Yount_Alyssa_files/libs/quarto-html/quarto.js"></script>
+<script src="PS01_Yount_Alyssa_files/libs/quarto-html/popper.min.js"></script>
+<script src="PS01_Yount_Alyssa_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="PS01_Yount_Alyssa_files/libs/quarto-html/anchor.min.js"></script>
+<link href="PS01_Yount_Alyssa_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="PS01_Yount_Alyssa_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="PS01_Yount_Alyssa_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="PS01_Yount_Alyssa_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="PS01_Yount_Alyssa_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="PS01_Yount_Alyssa_files/libs/quarto-diagram/mermaid.min.js"></script>
+<script src="PS01_Yount_Alyssa_files/libs/quarto-diagram/mermaid-init.js"></script>
+<link href="PS01_Yount_Alyssa_files/libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -81,12 +81,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
 <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="PS01_source.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></div>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="PS01_Yount_Alyssa.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></div>
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Problem Set 01: Intro to R and RStudio</h1>
+<h1 class="title">Using the RStudio IDE with Quarto</h1>
 </div>
 
 
@@ -103,7 +103,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">Last modified on August 23, 2023 09:34:49 Eastern Daylight Time</p>
+      <p class="date">Last modified on AMugu59t 24, 2023 10:31:59 Eastern Daylight Time</p>
     </div>
   </div>
   
@@ -113,27 +113,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="./figures/cbrown.jpg" class="img-fluid figure-img" width="686"></p>
-</figure>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">6</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</div>
-</div>
-<p>The goal this week is to introduce <code>R</code> and RStudio which will be used throughout the course both to review the statistical concepts discussed in the course and to analyze real data and come to informed conclusions. To clarify which is which: <code>R</code> is the name of the programming language itself, and RStudio is an integrated development editor (IDE).</p>
-<p>Today, we begin with the fundamental building blocks of <code>R</code> and RStudio: the interface, creating and saving files, and basic commands.</p>
-<section id="opening-rstudio-server" class="level1">
-<h1>Opening RStudio Server</h1>
-<p>Open Appalachian’s RStudio Server and sign in: <a href="https://mathr.appstate.edu">RStudio Server</a></p>
 <p>Your credentials are the same ones you use to log into your ASU email account.</p>
 <p>Please <strong>DO NOT</strong> choose Stay signed in.</p>
-</section>
 <section id="the-rstudio-interface" class="level1">
 <h1>The RStudio Interface</h1>
 <p>In the RStudio Server, you should see a window that looks like the image in <a href="#fig-rstudio">Figure&nbsp;1</a>.</p>
-<div class="cell" data-layout-align="center">
+<div class="cell">
 <div class="cell-output-display">
 <div id="fig-rstudio" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
@@ -171,7 +159,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="opening-a-new-file">Opening a New File</h2>
 <p>Quarto documents can be used in <code>R</code> or python. For this course, we will use <code>R</code> and the RStudio IDE to work with Quarto documents. Quarto documents are useful for both running code and annotating the code with comments. The documents can be saved, so you can refer back to your code later. Quarto documents can also be used to generate other document types (HTML, PDF, MS Word, Open Office, or ePub) for presenting the results of your analyses in formats that may be required in other contexts.</p>
 <p>To open a new Quarto document, click on the little green plus beside the circled R in the upper left hand area of the RStudio IDE as seen in <a href="#fig-rstudio">Figure&nbsp;1</a> and select <code>Quarto Document...</code>. Enter a title and author in the corresponding boxes; then, click create. See <a href="#fig-open">Figure&nbsp;2</a> for an example where the document title is <strong>Something Cool</strong> and the author is <strong>Joe Quarto</strong>.</p>
-<div class="cell" data-layout-align="center">
+<div class="cell">
 <div class="cell-output-display">
 <div id="fig-open" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
@@ -200,7 +188,7 @@ Warning
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>The <code>PS01_YourLastName_YourFirstName.qmd</code> file is just for your own practice. The file you will save, commit, and push to the class repository is the file you are reading (<code>PS01_source.qmd</code>). You will make changes to this file starting in <a href="#sec-practice-on-your-own">Section&nbsp;6</a> (Practice on Your Own).</p>
+<p>The <code>PS01_YourLastName_YourFirstName.qmd</code> file is just for your own practice. The file you will save, commit, and push to the class repository is the file you are reading (<code>PS01_source.qmd</code>). You will make changes to this file starting in <a href="#sec-practice-on-your-own">Section&nbsp;5</a> (Practice on Your Own).</p>
 </div>
 </div>
 <ul>
@@ -218,7 +206,7 @@ Warning
 <li><p>Finally, insert what is called a “code chunk.” To do this, click on the green +C (insert a new code chunk) button near the top right of the <code>*.qmd</code> source’s panel. <code>R</code> code is entered on the blank line inside the <code>R</code> code chunk.</p></li>
 </ul>
 <p>Your final result should look similar to <a href="#fig-changes">Figure&nbsp;3</a>.</p>
-<div class="cell" data-layout-align="center">
+<div class="cell">
 <div class="cell-output-display">
 <div id="fig-changes" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
@@ -244,8 +232,8 @@ Warning
 <h1>Entering and Running Commands</h1>
 <p>The code chunks are where you put <code>R</code> code in Quarto file. So far, your “rendered” file (your formatted document file) doesn’t show anything because we did not put any content in the code chunks yet.</p>
 <p>Using your first code chunk, type the following command to create a new variable called <code>x</code> with the value of 6.</p>
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">6</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">6</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>The arrow <code>&lt;-</code> is called an <strong><em>assignment operator</em></strong> and tells <code>R</code> to save an object called <code>x</code> that has the value of 6. This is similar to saving a value in a graphing calculator.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -268,13 +256,9 @@ Tip
 </ul>
 <p>Think of “running” code in your console as telling <code>R</code> “do this.”</p>
 <p>Note that you now have a new object in your workspace, called <code>x</code>.</p>
-<div class="cell" data-layout-align="center">
+<div class="cell">
 <div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figures/quarto-workspace.png" class="img-fluid figure-img" width="606"></p>
-</figure>
-</div>
+<p><img src="figures/quarto-workspace.png" class="img-fluid" width="606"></p>
 </div>
 </div>
 </section>
@@ -282,17 +266,17 @@ Tip
 <h1>Data Types<span class="math inline">\(-\)</span>a Brief Intro</h1>
 <p>So far, you have made a numeric variable <code>x</code>. There many other types of data objects you can make in <code>R</code>. In this section, we create different types of objects.</p>
 <p>To make a <strong>character</strong> object called <code>favorite_movie</code> copy, paste, and run the following code in a new code chunk. Think of characters as text as opposed to numerical values. Note that <code>R</code> knows this is a <strong>character</strong> because there are quotation marks around <code>Star_Wars</code>.</p>
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>favorite_movie <span class="ot">&lt;-</span> <span class="st">"Star_Wars"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>favorite_movie <span class="ot">&lt;-</span> <span class="st">"Star_Wars"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Next, copy, paste, and run the following command in a new code chunk.</p>
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>v <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">6</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>v <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">6</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>This makes what is called a <strong>vector</strong>, which we have named <code>v</code>. It is a data object that has multiple elements of the same type. This vector contains three numbers: 2, 4, and 6. The <code>c()</code> function says tells <code>R</code> to <code>concatenate</code> the values 2, 4, 6, into a single <strong>vector</strong>. Note in the Environment pane that your vector <code>v</code> contains numbers (listed as <code>num</code>).</p>
 <p>You can do math on a vector that contains numbers. For instance, copy, paste, and run the following command in a new code chunk. This tells R to multiply each element of the vector <code>v</code> by 3.</p>
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>v <span class="sc">*</span> <span class="dv">3</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>v <span class="sc">*</span> <span class="dv">3</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="sec-practice-on-your-own" class="level1">
@@ -342,10 +326,10 @@ Problem 1 Answers
 </div>
 <div id="callout-5" class="callout-5-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Type your code and comments inside the code chunk</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>y<span class="ot">&lt;-</span> <span class="dv">7</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>z<span class="ot">&lt;-</span> x<span class="sc">*</span>y</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Type your code and comments inside the code chunk</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> <span class="dv">7</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>z <span class="ot">&lt;-</span> x <span class="sc">*</span> y</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -378,16 +362,17 @@ Problem 2 Answers
 </div>
 <div id="callout-7" class="callout-7-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Type your code and comments inside the code chunk</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="dv">6</span> <span class="sc">+</span> <span class="dv">3</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Type your code and comments inside the code chunk</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="dv">6</span> <span class="sc">+</span> <span class="dv">3</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 9</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>ans <span class="ot">&lt;-</span> <span class="dv">6</span> <span class="sc">+</span> <span class="dv">3</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>ans <span class="ot">&lt;-</span> <span class="dv">6</span> <span class="sc">+</span> <span class="dv">3</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
-<li>The answer to 6 + 3 (‘r 6+3’ or ‘r ans2’)</li>
+<li>The answer to 6 + 3 (9 or 9)</li>
+<li>The answer for the expression 6+3 appears in the console section of the bottom left panel in black as well as under the R code chunk.</li>
 </ul>
 </div>
 </div>
@@ -422,13 +407,18 @@ Problem 3 Answers
 </div>
 <div id="callout-9" class="callout-9-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Type your code and comments inside the code chunk</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Type your code and comments inside the code chunk</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="dv">6</span><span class="sc">+</span><span class="dv">3</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>a</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 9</code></pre>
+</div>
 </div>
 <ul>
-<li><p>Type your answer here and delete this sentence.</p></li>
-<li><p>Type your answer here and delete this sentence.</p></li>
-<li><p>Type your answer here and delete this sentence.</p></li>
+<li><p>The answer does not appear here as I have not used the variable “ans”.</p></li>
+<li><p>The value of a is shown below under the console tab of the bottom left panel. The value of a is shown as 6 + 3.</p></li>
+<li><p>After typing a into the code chunk, the answer to the expression 6 + 3 is stated under the code chunk as well as in the console section of the bottom left panel.</p></li>
 </ul>
 </div>
 </div>
@@ -474,11 +464,15 @@ Problem 4 Answers
 </div>
 <div id="callout-12" class="callout-12-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Type your code and comments inside the code chunk</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Type your code and comments inside the code chunk</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>a<span class="sc">^</span><span class="dv">2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 81</code></pre>
+</div>
 </div>
 <ul>
-<li>Type your answer here and delete this sentence.</li>
+<li>The “^” operator acts as an operation to put whatever the value before it is to the power of the value placed after the operator. So, in this example, a, or 9, is put to the power of 2, which is 81.</li>
 </ul>
 </div>
 </div>
@@ -511,11 +505,15 @@ Problem 5 Answers
 </div>
 <div id="callout-14" class="callout-14-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Type your code and comments inside the code chunk</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Type your code and comments inside the code chunk</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(a, x, y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 22</code></pre>
+</div>
 </div>
 <ul>
-<li>Type your answer here and delete this sentence.</li>
+<li>The sum function sums all of the values entered and adds them together. So, in this example, the values a, or 9, plus x, or 6, plus y, or 7 is 22.</li>
 </ul>
 </div>
 </div>
@@ -548,7 +546,7 @@ Problem 6 Answers
 <div id="callout-16" class="callout-16-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
 <ul>
-<li>Type your answer here and delete this sentence.</li>
+<li>After clicking on the broom icon in the top right corner of the screen, the environment pane was wiped of each of the values and their answers.</li>
 </ul>
 </div>
 </div>
@@ -582,7 +580,7 @@ Problem 7 Answers
 <div id="callout-18" class="callout-18-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
 <ul>
-<li>Type your answer here and delete this sentence.</li>
+<li>After selecting “Run All”, the console screen changed and the environment pane was refreshed to include all previously used values and their given numbers.</li>
 </ul>
 </div>
 </div>
@@ -598,8 +596,8 @@ Problem 8
 </div>
 <div class="callout-body-container callout-body">
 <p>Recall the vector <code>v</code> we created earlier. Copy, paste, and run the following in a code chunk. What does this code accomplish? (please answer with <strong>text</strong>)</p>
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>v <span class="sc">+</span> <span class="dv">2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>v <span class="sc">+</span> <span class="dv">2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -615,11 +613,15 @@ Problem 8 Answers
 </div>
 <div id="callout-20" class="callout-20-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Type your code and comments inside the code chunk</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Type your code and comments inside the code chunk</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>v <span class="sc">+</span> <span class="dv">2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 4 6 8</code></pre>
+</div>
 </div>
 <ul>
-<li>Type your answer here and delete this sentence.</li>
+<li>The expression v + 2 adds 2 to each of the values gievn to v, which includes 2, 4 and 6. This changed to 4, 6 and 8.</li>
 </ul>
 </div>
 </div>
@@ -635,8 +637,8 @@ Problem 9
 </div>
 <div class="callout-body-container callout-body">
 <p>Copy, paste, and run the following code to make a vector called <code>music</code> that contains music genres. Recall a vector is a data object that has multiple elements of the same type. Here the data type is a <strong>character</strong>. Look in the environment pane. How does <code>R</code> tell us that this vector contains <strong>characters</strong> not numbers? (please answer with <strong>text</strong>)</p>
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>music <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"bluegrass"</span>, <span class="st">"funk"</span>, <span class="st">"folk"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>music <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"bluegrass"</span>, <span class="st">"funk"</span>, <span class="st">"folk"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -652,11 +654,11 @@ Problem 9 Answers
 </div>
 <div id="callout-22" class="callout-22-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Type your code and comments inside the code chunk</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>music <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"bluegrass"</span>, <span class="st">"funk"</span>, <span class="st">"folk"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
-<li>Type your answer here and delete this sentence.</li>
+<li>The environment pane tells us the characters are not numbers by putting each of the words in quotation marks.</li>
 </ul>
 </div>
 </div>
@@ -750,17 +752,13 @@ Tip
 </ul>
 </div>
 </div>
-<div class="cell" data-layout-align="center">
+<div class="cell">
 <div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://ih0.redbubble.net/image.383394350.6935/mp,550x550,gloss,ffffff,t.3u1.jpg" class="img-fluid figure-img"></p>
-</figure>
+<p><img src="https://ih0.redbubble.net/image.383394350.6935/mp,550x550,gloss,ffffff,t.3u1.jpg" class="img-fluid"></p>
 </div>
 </div>
-</div>
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sessionInfo</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sessionInfo</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>R version 4.2.3 (2023-03-15)
 Platform: x86_64-pc-linux-gnu (64-bit)
@@ -780,13 +778,10 @@ locale:
 attached base packages:
 [1] stats     graphics  grDevices utils     datasets  methods   base     
 
-other attached packages:
-[1] knitr_1.43
-
 loaded via a namespace (and not attached):
  [1] htmlwidgets_1.6.2 compiler_4.2.2    fastmap_1.1.1     cli_3.6.1        
  [5] tools_4.2.2       htmltools_0.5.6   rstudioapi_0.15.0 yaml_2.3.7       
- [9] rmarkdown_2.24    jpeg_0.1-10       jsonlite_1.8.7    xfun_0.40        
+ [9] rmarkdown_2.24    knitr_1.43        jsonlite_1.8.7    xfun_0.40        
 [13] digest_0.6.33     rlang_1.1.1       png_0.1-8         evaluate_0.21    </code></pre>
 </div>
 </div>
