@@ -13,6 +13,7 @@ editor: visual
 x <- 6
 ```
 
+
 Your credentials are the same ones you use to log into your ASU email account.
 
 Please **DO NOT** choose Stay signed in.
@@ -301,11 +302,11 @@ music <- c("bluegrass", "funk", "folk")
 
 ::: {.callout-important icon="false" collapse="false" title="Problem 9 Answers"}
 ```{r}
-# Type your code and comments inside the code chunk
 music <- c("bluegrass", "funk", "folk")
+
 ```
 
--   The environment pane tells us the characters are not numbers by putting each of the words in quotation marks.
+-   The environment pane tells us the characters are not numbers by putting each of the words in quotation marks. 
 :::
 
 ::: {.callout-note icon="false" title="Problem 10"}
